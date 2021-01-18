@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation - Functions & DOM - wk2</title>
+</head>
+<body>
+    
+    <h1>JS Experimentation - Functions & DOM</h1>
+    <h2>Self Introduction Mad Libs</h2>
+
+    <p id="enterName">Hi, I am _________________.</p>
+    <p id="enterColor">My favorite color is _____.</p>
+    <p id="enterFood">I love to eat ____________.</p>
+
+    <button onclick="fillIn()">Fill in the blanks!</button>
+
+    <script>
+
+        /* My program is a self-introduction mad libs game, which 
+           asks the user to click on the button to fill in the blanks
+           with their own information. Once the user, clicks on the
+           button, they may enter in their name, favorite color, and
+           favorite food, and as a result, the program will fill in 
+           the blanks of the sentences above by replacing each line
+           with a new line that contains the user's input. */
+
+        function fillIn() {
+            var name = prompt("Hello there! What's your name?", "");
+            var myName = document.getElementById("enterName");
+            myName.replaceWith(`Hi, I am ${name}.`)
+
+            var color = prompt("What is your favorite color?", "");
+            var myColor = document.getElementById("enterColor");
+            myColor.replaceWith(`My favorite color is ${color}.`);
+
+            var food = prompt("What is your favorite food?", "");
+            var myFood = document.getElementById("enterFood");
+            myFood.replaceWith(`I love to eat ${food}.`);
+        }
+        
+    </script>
+
+</body>
+</html>
