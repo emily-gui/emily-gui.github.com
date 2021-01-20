@@ -13,6 +13,7 @@
     <p id="enterName">Hi, I am _________________.</p>
     <p id="enterColor">My favorite color is _____.</p>
     <p id="enterFood">I love to eat ____________.</p>
+    <p id="giveGift"></p>
 
     <button onclick="fillIn()">Fill in the blanks!</button>
 
@@ -35,11 +36,15 @@
             var myColor = document.getElementById("enterColor");
             myColor.replaceWith(`My favorite color is ${color}.`);
 
-            var food = prompt("What is your favorite food?", "");
+            var food = prompt("What is something you love to eat?", "");
             var myFood = document.getElementById("enterFood");
             myFood.replaceWith(`I love to eat ${food}.`);
+
+            var coloredFood = `${color} ${food}`;
+            var yourTreat = document.getElementById("giveGift");
+            yourTreat.replaceWith(`Then here's a ${coloredFood} for you!`);
         }
-        
+
     </script>
 
 </body>
