@@ -6,19 +6,20 @@ font-family: 'Unica One', cursive;
 */
 
 body {
-    background-color: #f8ebe8;
+    background-color: #e5e0ff;
     font-family: 'Rubik', sans-serif;
 }
 
-h2 {
+h1 {
     margin-bottom: 20px;
-    font-weight: 500;
 }
 
 #container {
+    /* background-color: #f2f2ff; */
     margin: auto;
-    max-width: 1200px;
-    min-width: 800px;
+    max-width: 1000px;
+    min-width: 700px;
+    padding: none;
 }
 
 #banner {
@@ -26,7 +27,7 @@ h2 {
     background-color: #000;
     transition: all 5s ease;
     border: 2px solid #000;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 #banner:hover {
@@ -76,42 +77,65 @@ main {
     padding: 20px 0px 20px 0px;
 }
 
-section {
+nav {
     flex: 1;
-    margin-right: 15px;
-    padding: 12px 0px 12px 0px;
-
-    background-color: #fff;
+    margin-right: 10px;
     border: 2px solid #000;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
-section:last-of-type {
-    margin-right: 0px;
+nav ul {
+	padding-left:0;
 }
 
-section h2 {
-    padding-left: 40px;
-}
-
-ul {
+nav ul li {
     list-style-type: none;
-    list-style-position: inside;
-    padding-left:0;
 }
 
-li {
-    line-height: 30px;
-    padding-left: 40px;
+nav ul li a {
+    display: block;
+    text-decoration: none;
+	font-weight: 500;
+	color:#000;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+}
+
+#entries {
+    flex: 3;
+    margin-left: 10px;
+}
+
+article {
+    padding: 20px 47px 20px 47px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+article h2 {
+    font-weight: 500;
+}
+
+time {
+    font-weight: 300;
+}
+
+article p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    
 }
 
 a {
     text-decoration: none;
-    color: rgb(49, 49, 49);
+    color: #6878b5;
 }
 
 a:hover {
-    color: #dab9b4;
+    color: #aab8f1;
 }
 
 footer {
@@ -120,11 +144,9 @@ footer {
     text-align: center;
     margin-bottom: 20px;
     border: 2px solid #000;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 footer a {
     padding: 0px 20px 0px 20px;
-    text-decoration: none;
-    color: #6878b5;
 }
