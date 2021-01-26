@@ -25,7 +25,7 @@ h1 {
 #banner {
     height: 250px;
     background-color: #000;
-    transition: all 5s ease;
+    transition: background-color 5s ease;
     border: 2px solid #000;
     border-radius: 15px;
 }
@@ -84,6 +84,14 @@ nav {
     border-radius: 20px;
 }
 
+/* sticky positioning is not supported by 
+internet explorer, edge 15, or earlier versions */
+/* #sticky {
+    position: -webkit-sticky; /* for safari */ 
+    /* position: sticky;
+    top: 20px;
+} */
+
 nav ul {
 	padding-left:0;
 }
@@ -111,6 +119,11 @@ article {
     padding: 20px 47px 20px 47px;
     border: 2px solid #000;
     border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+article:last-of-type {
+    margin-bottom: 0px;
 }
 
 article h2 {

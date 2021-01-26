@@ -24,7 +24,7 @@ h2 {
 #banner {
     height: 250px;
     background-color: #000;
-    transition: all 5s ease;
+    transition: background-color 5s ease;
     border: 2px solid #000;
     border-radius: 20px;
 }
