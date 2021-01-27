@@ -2,8 +2,6 @@
     "use strict";
     console.log("reading js");
 
-    // code starts from here
-
     const myForm = document.querySelector('#myForm');
     const madlib = document.querySelector('#madlib');
 
