@@ -3,8 +3,8 @@ body {
     background-position: center;
 
     margin: auto;
-    width: 1366px;
-    height: 768px;
+    max-width: 1366px;
+    max-height: 768px;
 
     background-color: #f1d5d1;
     font-family: 'Rubik', sans-serif;
