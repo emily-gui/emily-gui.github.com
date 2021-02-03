@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <!--link to google fonts here-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <title>Studio - Mad Libs 2.0</title>
     <script src="script.js" defer></script> 
 </head>
 <body>
+    <div id="container">
 
-    <header>
-        <h1>Mad Libs 2.0</h1>
-    </header>
-
-    <!-- include at least one img
-    optimize + compress
-    all html tags have width, height, and alt attributes -->
-
-    <main>
-        <form id="myForm">
-            <!--label's for must match input's id-->
-            <label for="noun1">Provide a noun</label>
-            <input type="text" id="noun1" required> 
-            
-            <label for="noun2"> Provide another noun</label>
-            <input type="text" id="noun2" required>
-            
-            <label for="adj"> Provide an adjective</label>
-            <input type="text" id="adj" required>
-            
-            <label for="verb"> Provide a verb</label>
-            <input type="text" id="verb" required>
-            
-            <!--include at least one more input-->
-            
-            <input type="submit" value="send">
-        </form>
-
-        <article id="madlib"></article>
-    </main>
+        <div id="content">
+            <header>
+                <h1>WHO ARE YOU?</h1>
     
-    <footer>
-        <a href="https://validator.w3.org/check?uri=referer">html</a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">css</a>
-    </footer>
+                <div id="intro">
+                    <p>welcome to self-reflection mad libs!</p>
+                    <p>please introduce yourself, and you shall receive a gift.</p>
+                </div>
+            </header>
+        
+            <main>
+                <form id="myForm">
+                    <label for="name">your name</label><br>
+                    <input type="text" id="noun1" required><br> 
+                    
+                    <label for="emotion">today's emotion</label><br>
+                    <input type="text" id="noun2" required><br> 
+                    
+                    <label for="color">favorite color</label><br>
+                    <input type="text" id="adj" required><br> 
+                    
+                    <label for="food">favorite food</label><br>
+                    <input type="text" id="verb" required><br> 
+                    
+                    <label for="saying">favorite saying</label><br>
+                    <input type="text" id="verb2" required><br> 
+                    
+                    <input type="submit" id="button" value="create!">
+                </form>
+        
+                <article id="madlib"></article>
+            
+            <footer>
+                <a href="mailto:&#101;&#109;&#103;&#117;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">email</a>
+                <a href="https://validator.w3.org/check?uri=referer">html</a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">css</a>
+            </footer>
+        </div>
 
+    </div>
 </body>
 </html>

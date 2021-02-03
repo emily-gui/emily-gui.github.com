@@ -28,30 +28,17 @@
             } else {
                 makeMadLib(words);
             }
-            
         }
+
+        
     }
 
     function makeMadLib(wordsArray) {
-        const myText = `Here are the words: ${wordsArray[0]}, ${wordsArray[1]}, ${wordsArray[2]}, and ${wordsArray[3]}.`;
+        const myText = `Hello! My name is ${wordsArray[0]}, and I am feeling ${wordsArray[1]} today.
+                        My favorite color is ${wordsArray[2]}, and I love ${wordsArray[3]}.
+                        That's just a little bit about me, but a saying I always go by is "${wordsArray[4]}"!
+                        Thank you for introducing yourself, ${wordsArray[0]}. As a gift, here's a ${wordsArray[2]} ${wordsArray[3]} for you!`;
         madlib.innerHTML = myText;
     }
 
-
-    /************************ canvas *****************************/
-    /* const userName = document.getElementById('userName').value;
-    const userName = document.querySelector('#userName').value; */
-
-    /* submit.addEventListener('click', function(event){
-        event.preventDefault();
-        // your code here
-   }); */
-
-   //Add a condition that registers specific inputs to create specific outputs or HTML/CSS changes, such as custom images or colors
-   //Add error detection messages if users leave a field blank (also called "fallback messages")
-
-   //updating your variable declarations from var to let and const as appropriate
-
-   /************************ canvas *****************************/
-
-})();
+}());

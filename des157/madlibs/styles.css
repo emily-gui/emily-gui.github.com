@@ -1,0 +1,84 @@
+body {
+    background-image: url(/madlibs/images/madlibs.png);
+    background-position: center;
+
+    margin: auto;
+    width: 1366px;
+    height: 768px;
+
+    background-color: #f1d5d1;
+    font-family: 'Rubik', sans-serif;
+}
+
+#container {
+    background-image: url(/madlibs/images/madlibs.png);
+
+    padding: 10px 200px 30px 200px;
+
+    justify-content: center;
+    text-align: center;
+
+    background-color: aliceblue;
+}
+
+#content {
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+
+    border-radius: 20px;
+}
+
+#intro {
+
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px;
+
+    font-style: italic;
+}
+
+main {
+    margin-top: 20px;
+}
+
+input {
+    margin: 10px 0px 15px 10px;
+    padding: 10px 100px 0px 100px;
+
+    background-color: #fff;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 10px;
+}
+
+#button {
+    margin: 20px 5px 20px 5px;
+    padding: 5px 80px 5px 80px;
+
+    background-color: rgb(255, 219, 101);
+    border: 2px solid rgb(216, 180, 61);
+}
+
+#button:hover {
+    background-color:  rgb(255, 232, 157);
+    border-color: rgb(255, 219, 101);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+footer {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+footer a {
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    color: #6878b5;
+}
