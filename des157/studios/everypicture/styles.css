@@ -1,0 +1,198 @@
+body {
+    transition: background-color 5s ease;
+    animation: sky 20s infinite;
+
+    font-family: 'Rubik', sans-serif;
+    color: antiquewhite;
+
+    max-width: 1366px;
+    max-height: 768px;
+}
+
+@keyframes sky {
+    0% {
+      background-color: rgb(133, 145, 255);
+    }
+
+    25% {
+      background-color: rgb(166, 133, 255);
+    }
+
+    50% {
+      background-color: rgb(216, 133, 255);
+    }
+
+    75% {
+        background-color: rgb(166, 133, 255);
+    }
+
+    100% {
+        background-color: rgb(133, 145, 255);
+    }
+}
+
+#container {
+    display: flex;
+    padding: 0px 50px 0px 50px;
+}
+
+header {
+    flex: 1;
+    color: antiquewhite;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 100;
+
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+header p {
+    margin-top: 50px;
+    padding-left: 100px;
+
+    line-height: 20px;
+    font-style: italic;
+}
+
+#photos { 
+    flex: 2;
+    padding: 50px 0px 50px 0px;
+}
+
+#gallery {
+    position: absolute;
+}
+
+#gallery1 #date {
+    padding-left: 10px;
+
+    margin: auto;
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#gallery1 {
+    padding: 10px 10px 20px 10px;
+    background-color: antiquewhite;
+}
+
+#gallery2,
+#gallery3,
+#gallery4,
+#gallery5 {
+    position: relative;
+    background-color: antiquewhite;
+    padding: 20px 10px 20px 20px;
+}
+
+#gallery2 #date,
+#gallery3 #date,
+#gallery4 #date,
+#gallery5 #date {
+    padding-top: 20px;
+    
+    margin: auto;
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#gallery2 {
+    top: 25px;
+    left: 60px;
+}
+
+#gallery3 {
+    top: -500px;
+    left: 200px;
+}
+
+#gallery4 {
+    top: -600px;
+    left: 350px;
+}
+
+#gallery5 {
+    top: -1000px;
+    left: 600px;
+} 
+
+/******************** testing out overlays **********************/
+
+/* .hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: showing;
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.overlay article {
+    box-sizing: border-box;
+    background-color:#fff;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
+
+.corner {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    border:none;
+    background-color: transparent;
+    color:tomato;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+} */
+
+/******************************************/
+
+footer {
+    margin-top: 50px;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:hover {
+    color: #dab9b4;
+}
+
