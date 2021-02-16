@@ -115,6 +115,16 @@ nav ul li a {
     margin-left: 10px;
 }
 
+figure {
+    padding: 0px;
+    margin: 20px 0px 20px 0px;
+}
+
+figcaption {
+    padding-top: 10px;
+    font-style: italic;
+}
+
 article {
     padding: 20px 47px 20px 47px;
     border: 2px solid #000;
