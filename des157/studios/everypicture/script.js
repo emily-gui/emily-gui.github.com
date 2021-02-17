@@ -2,6 +2,7 @@
     "use strict";
     console.log("reading js");
 
+    /* code reference for moveImage function: https://www.w3schools.com/howto/howto_js_draggable.asp */
     moveImage(document.getElementById("gallery"));
 
     function moveImage(image) {
@@ -13,6 +14,8 @@
         if (document.getElementById(image.id + "1")) {
             document.getElementById(image.id + "1").onmousedown = cursorPosition;
 
+        /* still testing out way to be able to move each image individually */
+        
 /*         } else if (document.getElementById(image.id + "2")) {
             document.getElementById(image.id + "2").onmousedown = cursorPosition;
 
@@ -57,6 +60,7 @@
             
             pos3 = move.clientX;
             pos4 = move.clientY;
+
             document.onmouseup = stopImage;
             document.onmousemove = imagePostion;
         }
@@ -66,6 +70,7 @@
     
             pos1 = pos3 - move.clientX;
             pos2 = pos4 - move.clientY;
+
             pos3 = move.clientX;
             pos4 = move.clientY;
             
