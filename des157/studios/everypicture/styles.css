@@ -72,6 +72,7 @@ header p {
 
 #gallery {
     position: absolute;
+    height: 500px;
 }
 
 #gallery1 #date {
