@@ -1,25 +1,43 @@
 body {
-    font-family: Arial;
-    color: #333;
+    font-family: 'Rubik', sans-serif;
+
+    background-color: thistle;
+    color: aliceblue;
+
+    margin: auto;
+    max-width: 1366px;
+    max-height: 768px;
+
     padding: 50px;
     line-height: 1.5em;
 }
 
+#intro {
+    text-align: center;
+}
+
 button { 
+    background-color: darksalmon;
+    color: antiquewhite;
+
     padding: 10px;
+
+    border: 5px solid antiquewhite;
 }
 
 div {
+    text-align: center;
     padding: 20px;
 }
 
 #gamecontrol, #score {
-    background-color: aliceblue;
+    background-color: plum;
 }
 
 #game {
-    background-color:#eaeaea;
+    background-color: tan;
 }
+
 #actions {
-    background-color: silver;
+    background-color: rosybrown;
 }

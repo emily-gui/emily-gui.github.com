@@ -31,9 +31,57 @@ body {
     }
 }
 
+#animation {
+    position: absolute;
+    animation: float 10s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#cloud1{
+    z-index: 1;
+
+    position: relative;
+}
+
+#cloud2{
+    z-index: 2;
+
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#cloud3{
+    z-index: 3;
+
+    position: relative;
+    top: 200px;
+    left: 80px;
+}
+
 #container {
     display: flex;
     padding: 0px 50px 0px 50px;
+}
+
+#photos { 
+    flex: 2;
+    padding: 50px 0px 50px 50px;
+}
+
+#gallery {
+    position: absolute;
 }
 
 header {
@@ -65,123 +113,56 @@ header p {
     font-style: italic;
 }
 
-#photos { 
-    flex: 2;
-    padding: 50px 0px 50px 0px;
-}
-
-#gallery {
-    position: absolute;
-    height: 500px;
-}
-
-#gallery1 #date {
-    padding-left: 10px;
-
-    margin: auto;
-    color: black;
-    font-weight: 400;
-    font-size: 12px;
-}
-
-#gallery1 {
-    padding: 10px 10px 20px 10px;
-    background-color: antiquewhite;
-}
-
-#gallery2,
-#gallery3,
-#gallery4,
-#gallery5 {
+#galleryA,
+#galleryB,
+#galleryC,
+#galleryD,
+#galleryE {
     position: relative;
+    padding: 15px 15px 25px 15px;
     background-color: antiquewhite;
-    padding: 20px 10px 20px 20px;
 }
 
-#gallery2 #date,
-#gallery3 #date,
-#gallery4 #date,
-#gallery5 #date {
-    padding-top: 20px;
-    
+#date {
     margin: auto;
+    padding-top: 10px;
+
     color: black;
     font-weight: 400;
     font-size: 12px;
 }
 
-#gallery2 {
+#galleryA {
+    z-index: 5;
+}
+
+#galleryB {
+    z-index: 6;
+
     top: 25px;
     left: 60px;
 }
 
-#gallery3 {
-    top: -500px;
+#galleryC {
+    z-index: 4;
+    
+    top: -450px;
     left: 200px;
 }
 
-#gallery4 {
+#galleryD {
+    z-index: 7;
+
     top: -600px;
     left: 350px;
 }
 
-#gallery5 {
+#galleryE {
+    z-index: 8;
+
     top: -1000px;
     left: 550px;
 } 
-
-/******************** testing out overlays **********************/
-
-/* .hidden {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.showing {
-    visibility: showing;
-    opacity: 1;
-}
-
-.overlay {
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    transition-property: opacity, visibility;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.overlay article {
-    box-sizing: border-box;
-    background-color:#fff;
-    padding: 20px;
-    width: 50vw;
-    height: 80vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow-y: scroll;
-}
-
-.corner {
-    font-size: 36px;
-    margin: 0;
-    padding: 0;
-    border:none;
-    background-color: transparent;
-    color:tomato;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    outline: none;
-} */
-
-/******************************************/
 
 footer {
     margin-top: 50px;
