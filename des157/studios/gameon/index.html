@@ -11,20 +11,49 @@
     <script src="script.js" defer></script> 
 </head>
 <body>
-    <div id="intro">
-        <h1>Game of PIG</h1>
-        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
-        <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
-    </div>
 
-    <div id="gamecontrol">
-        <h2>Start a Game</h2>
-        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
-    </div>
-
-    <div id="game"></div>
-    <div id="actions"></div>
-    <div id="score"></div>
+    <div id="container">
+        <div id="intro">
+            <h1>P I G</h1>
+            <div id="info">
+                <a href="https://validator.w3.org/check?uri=referer">html</a></br>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">css</a>
+                <a href="https://www.soundjay.com">sound</a></br>
+            </div>
+        </div>
     
+        <div id="gameplay">
+            <div id="player1">
+                <p>PLAYER 1</p>
+                <div id="score1"></div>
+            </div>
+    
+            <div id="interactions">
+                <div id="gamecontrol">
+                    <button id="startgame">LET'S PLAY!</button>
+                </div>
+        
+                <div id="game"></div>
+                <div id="actions"></div>
+                <div id="score"></div>
+            </div>
+    
+            <div id="player2">
+                <p>PLAYER 2</p>
+                <div id="score2"></div>
+            </div>
+        </div>
+
+        <div id="left-image">
+            <img id="left" src="images/player-left.png" alt="player-left">
+            <!-- <div id="left-text"><p>PLAYER 1</p></div> -->
+        </div>
+        <div id="right-image">
+            <img id="right" src="images/player-right.png" alt="player-right">
+            <!-- <div id="right-text"><p>PLAYER 2</p></div> -->
+        </div>
+        
+    </div>
+
 </body>
 </html>

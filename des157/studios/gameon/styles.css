@@ -1,43 +1,152 @@
 body {
     font-family: 'Rubik', sans-serif;
 
-    background-color: thistle;
+    background-image: url("images/glow.png");
+    background-repeat: no-repeat;
+    background-position: top 200px center;
+    background-size: 450px;
+
+    background-color: rgb(109, 105, 175);
     color: aliceblue;
 
-    margin: auto;
-    max-width: 1366px;
-    max-height: 768px;
+    max-height: 700px;
+    max-width: 1200px;
 
-    padding: 50px;
+    margin: auto;
     line-height: 1.5em;
+}
+
+#container {
+    /* padding-top: 50px; */
 }
 
 #intro {
     text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+#intro h1 {
+    font-size: 100px;
+}
+
+#intro #info {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 18px;
+}
+
+#intro #info a {
+    padding: 0px 20px 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ff7b00;
 }
 
 button { 
     background-color: darksalmon;
     color: antiquewhite;
 
-    padding: 10px;
-
-    border: 5px solid antiquewhite;
+    padding: 15px;
+    border-style: none;
+    border-radius: 12px;
 }
 
-div {
+button:hover {
+    background-color: #ff7b00;
+    color: black;
+}
+
+/* gameplay */
+#gameplay {
+    display: flex;
+}
+
+#player1,
+#interactions,
+#player2 {
+    flex: 1;
     text-align: center;
-    padding: 20px;
+    border-radius: 20px;
+    height: 450px;
 }
 
-#gamecontrol, #score {
-    background-color: plum;
+#player1 {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(39, 29, 193));
 }
 
-#game {
-    background-color: tan;
+#player2 {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(193, 29, 119));
+}
+
+#player1 p {
+    font-size: 20px;
+    margin-right: 120px;
+}
+
+#player2 p {
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+#score1 {
+    margin-top: 150px;
+    margin-right: 125px;
+    font-size: 100px;
+}
+
+#score2 {
+    margin-top: 150px;
+    margin-left: 125px;
+    font-size: 100px;
+}
+
+#startgame {
+    margin-top: 190px;
+}
+
+#gamecontrol, 
+#actions,
+#game,
+#score {
+    text-align: center;
+}
+
+#gamecontrol {
+    margin-top: 20px;
+    margin-bottom: 75px;
 }
 
 #actions {
-    background-color: rosybrown;
+    margin-top: 90px;
+}
+
+/* bottom of the page */
+
+#left-image, #right-image {
+    position: relative;
+    display: inline-block;
+}
+
+#left, #right {
+    width: 500px;
+}
+
+#left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
