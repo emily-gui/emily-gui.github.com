@@ -75,7 +75,7 @@ button:hover {
     flex: 1;
     text-align: center;
     border-radius: 20px;
-    height: 450px;
+    height: 500px;
 }
 
 #player1 {
@@ -97,13 +97,13 @@ button:hover {
 }
 
 #score1 {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-right: 125px;
     font-size: 100px;
 }
 
 #score2 {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 125px;
     font-size: 100px;
 }
@@ -126,6 +126,10 @@ button:hover {
 
 #actions {
     margin-top: 90px;
+}
+
+#score p {
+    font-weight: 500;
 }
 
 /* bottom of the page */
