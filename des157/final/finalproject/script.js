@@ -157,6 +157,7 @@
 
             actionArea.innerHTML = "";
             document.getElementById('quit').innerHTML = "Start a New Game?";
+            document.getElementById('quit').style.opacity = '1';
         }
 
         else {
