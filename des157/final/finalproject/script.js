@@ -23,6 +23,17 @@
     let rightLight = document.getElementById('right-image');
     let rightDark = document.getElementById('right-image-off');
 
+    let scoreLeft = document.getElementById('player1');
+    let scoreRight = document.getElementById('player2');
+    let scorePlayer1 = document.getElementById('score-left');
+    let scorePlayer2 = document.getElementById('score-right');
+    let scoreNumLeft = document.getElementById('score1');
+    let scoreNumRight = document.getElementById('score2');
+
+    /* let rulesOpen = document.getElementById('rules');
+    let rulesOverlay = document.getElementById('rules-overlay');
+    let rulesButton = document.getElementById('rules-overlay-close'); */
+
     let gameData = {
         dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 
             'images/4die.png', 'images/5die.png', 'images/6die.png'],
@@ -52,9 +63,15 @@
 
     });
 
+    /* rulesOpen.addEventListener('click', function(){
+
+        rulesOverlay.style.visibility = 'visible';
+        rulesOverlay.style.zIndex = '99';
+
+    }); */
+
     function setUpTurn(){
         actionArea.innerHTML = '<p><br><br><br><br><br></p><button id="roll">Roll the Dice</button>';
-        game.innerHTML = `${gameData.players[gameData.index]}'s turn</p>`;
         showCurrScore();
 
         // overlay color change
@@ -69,13 +86,23 @@
             diceSound.play();
             throwDice();
         })
+
+        // turn on score board
+        scoreLeft.style.visibility = 'visible';
+        scoreRight.style.visibility = 'visible';
     };
 
     function throwDice(){
         actionArea.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
-        game.innerHTML = `<p>${gameData.players[gameData.index]}'s turn</p>`;
+        /* game.innerHTML = `<p>${gameData.players[gameData.index]}'s turn</p>`; */
+        if (gameData.players[gameData.index] === 'PLAYER 1') {
+            game.innerHTML = `<div id="left-arrow">&#11013</div>`;
+        }
+        else {
+            game.innerHTML = `<div id="left-arrow">&#10145</div>`;
+        }
         game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}">
                             <img src="${gameData.dice[gameData.roll2-1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
@@ -97,14 +124,13 @@
             oneRolledSound.play();
             gameData.index ? (gameData.index = 0) : (gameData.index = 1); // switch player
             game.innerHTML += `<p></br></br></br>Sorry, one of your rolls was a one.</br>
-                                    Switching to ${gameData.players[gameData.index]}</p>`;
+                                    Switching to ${gameData.players[gameData.index]}...</p>`;
             setTimeout(setUpTurn, 2000);
         }
 
         // if neither die is a 1
         else {
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-            /* actionArea.innerHTML = '<button id="rollagain">Roll Again</button> OR <button id="pass">Pass</button>'; */
             actionArea.innerHTML = '<div id="roll"><button id="rollagain">Roll Again</button></div>';
             actionArea.innerHTML += '<div id="pass"><button id="orpass">Pass</button></div>';
 
@@ -144,6 +170,8 @@
     };
 
     function leftOn(){
+        game.innerHTML = `<div id="left-arrow">&#11013</div>`;
+
         turn.style.visibility = 'visible';
         turnFlip.style.visibility = 'hidden';
 
@@ -151,9 +179,16 @@
         leftDark.style.visibility = 'hidden';
         rightLight.style.visibility = 'hidden';
         rightDark.style.visibility = 'visible';
+
+        scorePlayer1.style.color = 'white';
+        scorePlayer2.style.color = 'slategrey';
+        scoreNumLeft.style.color = 'white';
+        scoreNumRight.style.color = 'slategrey';
     };
 
     function rightOn(){
+        game.innerHTML = `<div id="left-arrow">&#10145</div>`;
+
         turn.style.visibility = 'hidden';
         turnFlip.style.visibility = 'visible';
 
@@ -161,6 +196,11 @@
         leftDark.style.visibility = 'visible';
         rightLight.style.visibility = 'visible';
         rightDark.style.visibility = 'hidden';
+
+        scorePlayer1.style.color = 'slategrey';
+        scorePlayer2.style.color = 'white';
+        scoreNumLeft.style.color = 'slategrey';
+        scoreNumRight.style.color = 'white';
     };
 
 }());

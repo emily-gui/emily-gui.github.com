@@ -1,5 +1,5 @@
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 
     background-image: url("images/glow.png");
     background-repeat: no-repeat;
@@ -29,23 +29,23 @@ body {
 
 @keyframes rainbow {
     0% {
-      color: peachpuff;
+      color: #fff383;
     }
 
     25% {
-        color: thistle;
+        color: lavenderblush;
     }
 
     50% {
-        color: plum;
+        color: #fff383;
     }
 
     75% {
-        color: powderblue;
+        color: lavenderblush;
     }
 
     100% {
-        color: peachpuff;
+        color: #fff383;
     }
 }
 
@@ -57,7 +57,7 @@ body {
     font-size: 15px;
 
     position: fixed;
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
@@ -94,7 +94,39 @@ button:hover {
 
 #startgame {
     margin-top: 175px;
+    font-weight: 500;
+    border: 2px solid antiquewhite;
+    background-color: #9a9dff;
 }
+
+#startgame:hover {
+    border: 2px solid black;
+    background-color: #ff7b00;
+}
+
+/* #rules {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 12px;
+    background-color: #8083d5;
+}
+
+#rules:hover {
+    background-color: #f79234;
+} */
+
+/* #rules-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+
+    z-index: -2;
+    visibility: hidden;
+}
+
+#rules-overlay article h1 {
+    text-align: center;
+} */
 
 #orpass {
     margin-top: 10px;
@@ -115,21 +147,27 @@ button:hover {
 }
 
 #player1 {
-    /* background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(39, 29, 193)); */
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(203, 201, 244, 0.1));
+    visibility: hidden;
 }
 
 #player2 {
-    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(193, 29, 119)); */
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(203, 201, 244, 0.1));
+    visibility: hidden;
 }
 
 #player1 p {
     font-size: 20px;
     margin-right: 120px;
+
+    color: slategrey;
 }
 
 #player2 p {
     font-size: 20px;
     margin-left: 120px;
+
+    color: slategrey;
 }
 
 #score1 {
@@ -153,15 +191,63 @@ button:hover {
 
 #gamecontrol {
     margin-top: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
+}
+
+#quit {
+    background-color: #8083d5;
+    opacity: 0.25;
+}
+
+#quit:hover {
+    background-color: #ff7b00;
+    opacity: 1;
 }
 
 #actions {
-    margin-top: 90px;
+    margin-top: 85px;
 }
 
 #score p {
+    font-size: 25px;
     font-weight: 500;
+    text-transform: uppercase;
+
+    margin-top: 100px;
+
+    animation: yay 2s infinite;
+}
+
+@keyframes yay {
+    0% {
+      color: red;
+    }
+
+    16% {
+      color: orange;
+    }
+
+    32% {
+      color: yellow
+    }
+
+    48% {
+      color: green;
+    }
+
+    64% {
+        color: blue;
+    }
+
+    100% {
+        color: purple;
+    }
+}
+
+/* arrow emoji */
+#left-arrow, #right-arrow {
+    font-size: 50px;
+    margin-bottom: 25px;
 }
 
 /* overlay */
@@ -230,13 +316,17 @@ button:hover {
 
 /* hiearchy */
 #turn, #turn-flip {
-    z-index: -3;
-}
-
-#left, #right {
     z-index: -1;
 }
 
+#left, #right {
+    z-index: 10;
+}
+
 #planet-left, #planet-right {
-    z-index: -2;
+    z-index: 9;
+}
+
+#gameplay {
+    z-index: 8;
 }
