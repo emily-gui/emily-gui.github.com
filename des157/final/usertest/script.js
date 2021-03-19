@@ -2,7 +2,7 @@
     "use strict";
     console.log("reading js");
 
-    alert('Hello there, welcome! To complete this user test, please do the following:\n\n1. Play 3-5 rounds to test out the game.\n2. Interact with both Roll Again and Pass buttons.\n3. Adjust the screen window size while playing.');
+    alert('Hello there, welcome! To complete this user test, please do the following:\n\n1. Play five rounds to test out the game.\n2. Interact with both Roll Again and Pass buttons.\n3. Adjust the screen window size while playing.');
 
     let startGame = document.getElementById('startgame');
     let gameControl = document.getElementById('gamecontrol');

@@ -1,0 +1,242 @@
+body {
+    font-family: 'Rubik', sans-serif;
+
+    background-image: url("images/glow.png");
+    background-repeat: no-repeat;
+    background-position: top -150px center;
+    background-size: 1000px;
+
+    background-color: #7D68FF;
+    color: aliceblue;
+
+    max-height: 700px;
+    max-width: 1200px;
+
+    margin: auto;
+    line-height: 1.5em;
+}
+
+#intro {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+#intro h1 {
+    font-size: 85px;
+
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+      color: peachpuff;
+    }
+
+    25% {
+        color: thistle;
+    }
+
+    50% {
+        color: plum;
+    }
+
+    75% {
+        color: powderblue;
+    }
+
+    100% {
+        color: peachpuff;
+    }
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 15px;
+
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+#info a {
+    padding: 0px 20px 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ff7b00;
+}
+
+/* buttons */
+button { 
+    background-color: #8285DA;
+    color: antiquewhite;
+
+    width: 200px;
+    height: 30px;
+    border-style: none;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #ff7b00;
+    color: black;
+}
+
+#startgame {
+    margin-top: 175px;
+}
+
+#orpass {
+    margin-top: 10px;
+}
+
+/* gameplay */
+#gameplay {
+    display: flex;
+}
+
+#player1,
+#interactions,
+#player2 {
+    flex: 1;
+    text-align: center;
+    border-radius: 20px;
+    height: 300px;
+}
+
+#player1 {
+    /* background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(39, 29, 193)); */
+}
+
+#player2 {
+    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(193, 29, 119)); */
+}
+
+#player1 p {
+    font-size: 20px;
+    margin-right: 120px;
+}
+
+#player2 p {
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+#score1 {
+    margin-top: 100px;
+    margin-right: 125px;
+    font-size: 100px;
+}
+
+#score2 {
+    margin-top: 100px;
+    margin-left: 125px;
+    font-size: 100px;
+}
+
+#gamecontrol, 
+#actions,
+#game,
+#score {
+    text-align: center;
+}
+
+#gamecontrol {
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+#actions {
+    margin-top: 90px;
+}
+
+#score p {
+    font-weight: 500;
+}
+
+/* overlay */
+#turn, #turn-flip {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* bottom of the page */
+#left-image, #right-image,
+#left-image-off, #right-image-off {
+    position: relative;
+    display: inline-block;
+}
+
+#left, #right {
+    position: fixed;
+    bottom: 105px;
+
+    width: 75px;
+}
+
+#left {
+    left: 125px;
+}
+
+#right {
+    right: 125px;
+}
+
+#planet-left, #planet-right {
+    position: fixed;
+    bottom: -570px;
+
+    width: 700px;
+}
+
+#planet-left {
+    left: -200px;
+}
+
+#planet-right {
+    right: -200px;
+}
+
+/* visibility */
+#left-image, #right-image {
+    visibility: visible;
+}
+
+#left-image-off, #right-image-off {
+    visibility: hidden;
+}
+
+#turn {
+    visibility: hidden;
+}
+
+#turn-flip {
+    visibility: hidden;
+}
+
+/* hiearchy */
+#turn, #turn-flip {
+    z-index: -3;
+}
+
+#left, #right {
+    z-index: -1;
+}
+
+#planet-left, #planet-right {
+    z-index: -2;
+}

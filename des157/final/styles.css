@@ -1,6 +1,13 @@
 body {
-    background-color: #83f4d9;
     font-family: 'Rubik', sans-serif;
+}
+
+#brief {
+    background-color: #83f4d9;
+}
+
+#usertest-results {
+    background-color: lightsalmon;
 }
 
 h1 {

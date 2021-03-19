@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Game of PIG</title>
+    <script src="script.js" defer></script> 
+</head>
+<body>
+
+    <div id="container">
+        <div id="intro">
+            <h1>G A L A C T I C &nbsp; P I G</h1>
+        </div>
+    
+        <div id="gameplay">
+            <div id="player1">
+                <p>PLAYER 1</p>
+                <div id="score1"></div>
+            </div>
+    
+            <div id="interactions">
+                <div id="gamecontrol">
+                    <button id="startgame">LET'S PLAY!</button>
+                </div>
+        
+                <div id="game"></div>
+                <div id="actions"></div>
+                <div id="score"></div>
+            </div>
+    
+            <div id="player2">
+                <p>PLAYER 2</p>
+                <div id="score2"></div>
+            </div>
+        </div>
+
+        <div id="left-image">
+            <img id="left" src="images/player-dark.png" alt="player-left-dark">
+            <img id="planet-left" src="images/planet-light.png" alt="planet-left-light">
+            
+            <!-- <div id="left-text"><p>PLAYER 1</p></div> -->
+        </div>
+        <div id="left-image-off">
+            <img id="left" src="images/player-light.png" alt="player-left-light">
+            <img id="planet-left" src="images/planet-dark.png" alt="planet-left-dark">
+            
+            <!-- <div id="left-text"><p>PLAYER 1</p></div> -->
+        </div>
+
+        <div id="right-image">
+            <img id="right" src="images/player-dark.png" alt="player-right-dark">
+            <img id="planet-right" src="images/planet-light.png" alt="planet-right-light">
+            
+            <!-- <div id="right-text"><p>PLAYER 2</p></div> -->
+        </div>
+        <div id="right-image-off">
+            <img id="right" src="images/player-light.png" alt="player-right-light">
+            <img id="planet-right" src="images/planet-dark.png" alt="planet-right-dark">
+            
+            <!-- <div id="right-text"><p>PLAYER 2</p></div> -->
+        </div>
+    </div>
+
+    <div id="overlay">
+        <img id="turn" src="images/overlay.png" alt="turn-overlay">
+    </div>
+    <div id="overlay-flip">
+        <img id="turn-flip" src="images/overlay2.png" alt="turn-overlay-flip">
+    </div>
+
+    <div id="info">
+        <a href="https://validator.w3.org/check?uri=referer">html</a></br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">css</a>
+        <a href="https://www.soundjay.com">&#127925</a></br>
+    </div>
+
+</body>
+</html>
